@@ -24,6 +24,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
+#spring gem is not supposed to be outside group :development
+#having it global is the only way I don't get my app crashed on Heroku
+#still looking for answer how to solve this....
+gem 'spring'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
